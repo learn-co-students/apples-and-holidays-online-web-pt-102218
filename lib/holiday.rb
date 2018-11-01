@@ -58,9 +58,19 @@ end
   # remember to return the updated hash
 
 def all_winter_holiday_supplies(holiday_hash)
+  # iterate over holiday_hash
+  # use key, value pairs in ||
+  # while we have a key in memory
+  # extract the values of that key
+  result = []
+  holiday_hash[:winter].each do |key, values|
+    result.push(values)
+    binding.pry
+  end
+result
 
-holiday_hash[:winter].to_s.capitalize!
-binding.pry
+#binding.pry
+#holiday_hash[:winter].to_s.capitalize!
 
 end
 
